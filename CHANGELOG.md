@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/CoCreate-app/CoCreate-auroradb/compare/v1.1.0...v1.1.1) (2026-07-19)
+
+
+### Bug Fixes
+
+* set default branch to main ([c240690](https://github.com/CoCreate-app/CoCreate-auroradb/commit/c240690ba73ae4849a74f49645f7b3c2c3f766a2))
+
 # [1.1.0](https://github.com/CoCreate-app/CoCreate-auroradb/compare/v1.0.0...v1.1.0) (2026-07-19)
 
 
