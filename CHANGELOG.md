@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/CoCreate-app/CoCreate-auroradb/compare/v1.0.0...v1.1.0) (2026-07-19)
+
+
+### Features
+
+* Update README.md to reflect CoCreate Aurora DB details and structure ([366d9f6](https://github.com/CoCreate-app/CoCreate-auroradb/commit/366d9f691c6bbf59b04dc817452a3d143723b402))
+
 # 1.0.0 (2026-07-18)
 
 
