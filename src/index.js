@@ -18,9 +18,17 @@
 import mysql from "@cocreate/mysql";
 
 /**
- * Universal router routing Aurora DB request methods safely.
- * Under the hood, this uses the fully-featured MySQL engine
- * but overrides the storage name context to ensure proper telemetry.
+ * Universal router routing Aurora DB storage request methods safely.
+ *
+ * Under the hood, Aurora DB utilizes the MySQL wire protocol and SQL engine dialect.
+ * Rather than re-implementing identical query handling logic, this wrapper
+ * delegates request execution directly to `@cocreate/mysql`.
+ *
+ * All operations conform to CoCreate's unified, object-oriented JSON protocol
+ * (e.g., `object.create`, `object.read`, `object.update`, `object.delete`).
+ * This standardized protocol operates across all database drivers and third-party
+ * APIs, allowing seamless, parallel multi-database state routing across backends
+ * without exposing underlying engine-specific APIs to the application layer.
  */
 export const send = (data) => {
 	return mysql.send(data);
