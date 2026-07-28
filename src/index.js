@@ -15,14 +15,14 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  ********************************************************************************/
 
-import mysql from "@cocreate/mysql";
+import postgresql from "@cocreate/postgresql";
 
 /**
- * Universal router routing Aurora DB storage request methods safely.
+ * Universal router routing Aurora DB request methods safely.
  *
- * Under the hood, Aurora DB utilizes the MySQL wire protocol and SQL engine dialect.
+ * Under the hood, Aurora DB utilizes the PostgreSQL wire protocol and SQL dialect.
  * Rather than re-implementing identical query handling logic, this wrapper
- * delegates request execution directly to `@cocreate/mysql`.
+ * delegates request execution directly to `@cocreate/postgresql`.
  *
  * All operations conform to CoCreate's unified, object-oriented JSON protocol
  * (e.g., `object.create`, `object.read`, `object.update`, `object.delete`).
@@ -31,7 +31,7 @@ import mysql from "@cocreate/mysql";
  * without exposing underlying engine-specific APIs to the application layer.
  */
 export const send = (data) => {
-	return mysql.send(data);
+	return postgresql.send(data);
 };
 
 export default { send };
