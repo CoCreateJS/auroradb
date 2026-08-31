@@ -127,7 +127,7 @@ Querying Aurora uses the exact same MongoDB-style filter syntax. The query below
   "storage": "auroradb",
   "database": "sales_analytics",
   "array": "order_events",
-  "$filter": {
+  "filter": {
     "query": {
       "transaction.total": { "$gte": 100.00 },
       "shipping.carrier": "FedEx"
