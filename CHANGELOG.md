@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/CoCreateJS/auroradb/compare/v2.0.0...v2.0.1) (2026-11-05)
+
+
+### Bug Fixes
+
+* upgrade CoCreate dependencies to v2 ([08b8853](https://github.com/CoCreateJS/auroradb/commit/08b88533196f44a5a4fddb214421d390377450ff))
+
 # [2.0.0](https://github.com/CoCreateJS/auroradb/compare/v1.1.1...v2.0.0) (2026-11-02)
 
 
